@@ -1,5 +1,4 @@
 # Building Blocks
-Sure, here's the catalog of APNIC data sources with an additional column for source links:
 
 | **Data Source** | **Description** | **Relevance to Resource Tracking** | **Source Link** |
 |---|---|---|---|
