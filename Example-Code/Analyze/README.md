@@ -30,6 +30,8 @@ One of the key innovations of our project lies in its ability to analyze and der
 
 Moreover, our project emphasizes the importance of collaboration and knowledge-sharing within the internet resource management community. By participating in hackathons like APNIC, we foster collaboration among developers, researchers, policymakers, and industry experts, driving innovation and advancing best practices in INR management.
 
+![high level architecture diagram](architecture.png?raw=true "Architecture")
+
 ## Why It Needs to be Solved:
 
 The efficient management and equitable distribution of Internet Number Resources are critical for ensuring the stability, resilience, and accessibility of the internet. However, the increasing demand for IP addresses, coupled with the complexity of global internet infrastructure, presents numerous challenges in resource allocation and management.
@@ -70,6 +72,9 @@ By incorporating advanced data analysis techniques, we can:
 In summary, innovative data analysis techniques are essential for unlocking the full value of Cross-RIR resource disposition data, empowering stakeholders to make informed decisions, optimize resource allocation processes, and ensure the continued stability and growth of the global internet ecosystem.
  
 ## Tech Stack Overview:
+
+![Tech Stack Overview](tech-stack-overview.png?raw=true "Tech Stack Overview")
+
  Our tech stack leverages a combination of cutting-edge technologies to build a scalable, secure, and efficient platform for deploying machine learning models and web applications. Below is an overview of the key components:
  1. Docker: Docker is used for containerization, allowing us to package machine learning models, web application components, and dependencies into lightweight, portable containers. This ensures consistent and reproducible deployments across different environments.
  2. Google Cloud Platform (GCP): GCP provides a robust and scalable infrastructure for hosting our applications and machine learning models. We utilize GCP services such as Google Kubernetes Engine (GKE), Cloud Storage, and Compute Engine for deployment, storage, and computation.
