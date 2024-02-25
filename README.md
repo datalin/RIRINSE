@@ -17,7 +17,7 @@ The kinds of problems it is looking at:
 
 A collection of basic tools to manipulate the data.
 
-# Cross-RIR resource disposition analysis: The delegated files.
+## The delegated files.
 
 The RIR all produce a daily statistics file called the 'delegated' statistics file or 'stats file', and a combined file is produced by the NRO. This process records the disposition of resources under each RIR. However, there are many ways to analyse this data, and combine it with information like the inter-RIR transfer log, the state of BGP, Resource Certification data, economic and geographic data. Some things are explicit, but others have to be inferred, for example the way different BGP speakers announce resources which are derived under different RIR policies or combine resources from several RIR and NIR. Or, the relationship of this data to GDP and Internet users.
 
@@ -35,7 +35,7 @@ An exploration of the motivations to solve this suite of problems.
 
 - One of the problems is we get to see the delegation but not the disposition of an IP Address.
 
-# [Cross-RIR Resource Disposition Analysis](Example-Code/README.md)
+# Cross-RIR Resource Disposition [Analysis](Example-Code/README.md)
 
 This repository contains a Python script for analyzing Cross-RIR resource disposition data by @shankarganesh.pj. The script fetches data from various sources such as the NRO statistics page, RouteViews, and REX (Resource Certification), parses the data, and performs basic analysis.
 
