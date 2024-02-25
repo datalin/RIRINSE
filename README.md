@@ -5,13 +5,13 @@ RIRINSE-APNIC57 is a team project at the APNIC57 Hackathon to explore the RIR in
 The kinds of problems it is looking at:
 
  * How to identify where resources are delegated
- *     Where are the resouces bought from?
- *     which country is buying these resources ?
- *     Which country is the resouces being sold to / or used at ? E.g: BD buys and IP block & is listed under Ireland but being used in Thailand.   
- * How to identify where resources are being used
+   * Where are the resources bought from?
+   * Which country is acquiring these resources ?
+   * In which country are the resouces being sold to / or used ? E.g: BD buys and IP block & is listed under Ireland but being used in Thailand.   
+ * How to identify where resources are being used - The "Geolocation" problem
  * How to correlate the resources between different information sources
- *     centrlized display of resource distribution amoungst all RIRs (with different time zones)
- *         Geofeed, Maxmind, caida, Internet Health Report.
+   * centralized display of resource distribution amoungst all RIRs (with different time zones)
+   * Geofeed, Maxmind, caida, Internet Health Report.
 
 ## [Basic Building Blocks](Building%20Blocks/README.md)
 
