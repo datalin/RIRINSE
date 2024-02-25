@@ -12,3 +12,4 @@ The kinds of problems it is looking at:
    * centralized display of resource distribution amoungst all RIRs (with different time zones)
    * Geofeed, Maxmind, caida, Internet Health Report.
 * What time in APNIC GMT can represent all collected data from yesterday?  
+* Create a business inteligence application that can we effectively track and understand the movement of resources across different stages, including where they are sourced, acquired, used, and ultimately distributed, considering the need to gather information from various sources and present it in a centralized and comprehensive manner. 
