@@ -6,11 +6,11 @@ This repository contains [a Python script](analyse.py) for analyzing Cross-RIR r
 
 ### Architecture
 
-![high level architecture diagram](Architecture.png?raw=true "Architecture")
+![high level architecture diagram](install-architecture.png?raw=true "Architecture")
 
 ### Sequence Diagram
 
-![sequence diagram](diagram.png?raw=true "Sequence Diagram")
+![sequence diagram](install-diagram.png?raw=true "Sequence Diagram")
 
 
 ### Features
