@@ -31,7 +31,8 @@ https://rex.apnic.net/
 
 This repository contains a Python script for analyzing Cross-RIR resource disposition data by @shankarganesh.pj. The script fetches data from various sources such as the NRO statistics page, RouteViews, and REX (Resource Certification), parses the data, and performs basic analysis.
 
-## Why
+## [Why](Why/README.md)
+
 - One of the problems is we get to see the delegation but not the disposition of an IP Address.
 
 ## Features
