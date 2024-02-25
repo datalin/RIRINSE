@@ -29,56 +29,13 @@ https://www.nro.net/about/rirs/statistics/
 https://www.routeviews.org/routeviews/
 https://rex.apnic.net/
 
-# Cross-RIR Resource Disposition Analysis
-
-This repository contains a Python script for analyzing Cross-RIR resource disposition data by @shankarganesh.pj. The script fetches data from various sources such as the NRO statistics page, RouteViews, and REX (Resource Certification), parses the data, and performs basic analysis.
-
 ## [Why](Why/README.md)
 
 - One of the problems is we get to see the delegation but not the disposition of an IP Address.
 
-## Features
+# [Cross-RIR Resource Disposition Analysis](Example-Code/README.md)
 
-- Fetches and processes data from the NRO statistics page, RouteViews, and REX.
-- Parses HTML content to extract relevant information.
-- Periodically updates the analysis in real-time using the `schedule` library.
-- Customizable for further data processing and analysis.
-
-## Setup
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/your-username/cross-rir-analysis.git
-    cd cross-rir-analysis
-    ```
-
-2. Install dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the script:
-
-    ```bash
-    python analyze.py
-    ```
-
-## Customization
-
-- Customize data parsing and processing functions in `analyze.py` according to your specific requirements and data formats.
-- Modify the scheduling frequency in `analyze.py` based on your update interval preferences.
-
-## Dependencies
-
-- [requests](https://pypi.org/project/requests/): For fetching data from URLs.
-- [beautifulsoup4](https://pypi.org/project/beautifulsoup4/): For parsing HTML content.
-- [schedule](https://pypi.org/project/schedule/): For scheduling periodic tasks.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or pull requests for any improvements or additional features.
+This repository contains a Python script for analyzing Cross-RIR resource disposition data by @shankarganesh.pj. The script fetches data from various sources such as the NRO statistics page, RouteViews, and REX (Resource Certification), parses the data, and performs basic analysis.
 
 ## License
 
