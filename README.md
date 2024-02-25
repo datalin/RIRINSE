@@ -12,6 +12,7 @@ The kinds of problems it is looking at:
  * How to correlate the resources between different information sources
    * centralized display of resource distribution amoungst all RIRs (with different time zones)
    * Geofeed, Maxmind, caida, Internet Health Report.
+*What time in APNIC GMT can represent all collected data from yesterday?  
 
 ## [Basic Building Blocks](Building%20Blocks/README.md)
 
