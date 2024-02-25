@@ -1,5 +1,9 @@
 # Hackathon Documentation for RIRINSE
 
+ * See also [Installation](INSTALL.md) 
+ * [A PDF of this document is also available](RIRINSE%20APNIC%20Hackathon%20Tech%20Documentation.pdf)
+ 
+
 RIRINSE-APNIC57 is a team project at the APNIC57 Hackathon to explore the RIR internet number resources (INR) data and how to relate it to other sources of information.
 ## Goals:
 
