@@ -15,9 +15,9 @@ The kinds of problems it is looking at:
 
 ## [Basic Building Blocks](Building%20Blocks/README.md)
 
-# RIRINSE-APNIC57
+A collection of basic tools to manipulate the data.
 
-Cross-RIR resource disposition analysis
+# Cross-RIR resource disposition analysis: The delegated files.
 
 The RIR all produce a daily statistics file called the 'delegated' statistics file or 'stats file', and a combined file is produced by the NRO. This process records the disposition of resources under each RIR. However, there are many ways to analyse this data, and combine it with information like the inter-RIR transfer log, the state of BGP, Resource Certification data, economic and geographic data. Some things are explicit, but others have to be inferred, for example the way different BGP speakers announce resources which are derived under different RIR policies or combine resources from several RIR and NIR. Or, the relationship of this data to GDP and Internet users.
 
@@ -30,6 +30,8 @@ https://www.routeviews.org/routeviews/
 https://rex.apnic.net/
 
 ## [Why](Why/README.md)
+
+An exploration of the motivations to solve this suite of problems.
 
 - One of the problems is we get to see the delegation but not the disposition of an IP Address.
 
