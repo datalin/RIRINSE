@@ -1,1 +1,14 @@
 # Building Blocks
+Sure, here's the catalog of APNIC data sources with an additional column for source links:
+
+| **Data Source** | **Description** | **Relevance to Resource Tracking** | **Source Link** |
+|---|---|---|---|
+| whois | Provides information about IP address blocks and their ownership. | Identifies the current holder of a resource and contact details. | [https://wq.apnic.net/](https://wq.apnic.net/) |
+| rdap | Offers an alternative way to query for resource registration data, often with a more user-friendly interface than whois. | Similar to whois, helps identify the current holder of a resource. | [https://www.apnic.net/](https://www.apnic.net/) |
+| dash | Enables searching for specific resources based on various criteria, such as IP address, ASN, or location. | Aids in finding specific resources and their associated information. | [https://www.apnic.net/](https://www.apnic.net/) |
+| rex | Provides access to historical resource registration data. | Useful for tracking ownership changes and identifying past holders of a resource. | [https://www.apnic.net/](https://www.apnic.net/) |
+| delegated statistics file | Contains aggregated statistics on resource delegations, including allocation sizes and regional distribution. | Provides insights into overall resource allocation patterns and trends. | [https://ftp.apnic.net/stats/apnic/delegated-apnic-latest](https://ftp.apnic.net/stats/apnic/delegated-apnic-latest) |
+| transfer log | Tracks transfers of IP resources between different holders. | Helps to understand how resources are moving between different entities. | [https://www.apnic.net/](https://www.apnic.net/) |
+| reverse DNS | Maps IP addresses to domain names, aiding in resource location. | Can provide clues about the organization or service associated with an IP address. | [https://www.apnic.net/manage-ip/manage-resources/reverse-dns/access-to-reverse-dns/](https://www.apnic.net/manage-ip/manage-resources/reverse-dns/access-to-reverse-dns/) |
+| bgp data | Shows how IP prefixes are advertised and routed on the internet. | Helps to visualize the path that resources take across the network. | [https://www.apnic.net/](https://www.apnic.net/) |
+| RPKI | Provides cryptographic validation of routing information, enhancing security. | While not directly related to resource tracking, RPKI helps to ensure the integrity of routing data, which is crucial for understanding how resources are flowing. | [https://www.apnic.net/community/security/resource-certification/](https://www.apnic.net/community/security/resource-certification/) |
