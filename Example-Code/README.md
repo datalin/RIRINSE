@@ -8,6 +8,11 @@ This repository contains [a Python script](analyse.py) for analyzing Cross-RIR r
 
 ![high level architecture diagram](Architecture.png?raw=true "Architecture")
 
+### Sequence Diagram
+
+![sequence diagram](diagram.png?raw=true "Sequence Diagram")
+
+
 ### Features
 
 - Fetches and processes data from the NRO statistics page, RouteViews, and REX.
