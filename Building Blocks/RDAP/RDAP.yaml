@@ -254,6 +254,45 @@ paths:
           description: Bad request
         '404':
           description: Domain not found
+  /history/domain/{domainName}:
+    get:
+      operationId: getDomainHistory
+      summary: Get historical information about a specific domain
+      parameters:
+        - name: domainName
+          in: path
+          required: true
+          description: The domain name to query historical information about, including reverse DNS lookup domains
+          schema:
+            type: string
+            pattern: '^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+      responses:
+        '200':
+          description: Historical information about the domain
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  events:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        eventAction:
+                          type: string
+                        eventDate:
+                          type: string
+                        eventActor:
+                          type: string
+                    required:
+                      - eventAction
+                      - eventDate
+        '400':
+          description: Bad request
+        '404':
+          description: Domain history not found
+
 
 
     
