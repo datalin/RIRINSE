@@ -18,7 +18,7 @@
 # Challanges
 - Found it hard to read the RFCs, used GPT to read the RFC and generate YAML but that was not working always.
 - Not all documentation has all the endpoint mentioned, so we had to collect endpoints and add.
-- We could write the code to fetch, but because of the lack of documentation already, we couldnt write code to analyze the data properly for NRO.
+- We could write the code to fetch, but because of the lack of documentation already, we couldn't write code to analyze the data properly for NRO.
 
 # Outcomes
 - We made a catalog of all the APNIC data services, what those are, and how to use them.
