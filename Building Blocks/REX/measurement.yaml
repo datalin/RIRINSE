@@ -7,6 +7,19 @@ servers:
   - url: https://rex-measurements.storage.googleapis.com
     description: Storage server for IPv6 deployment data
 paths:
+  /ipv6-deployment/{countryCode}.json:
+    get:
+      operationId: getThailandIpv6Deployment
+      summary: Get IPv6 deployment data for a specific country
+      responses:
+        '200':
+          description: Successful retrieval of IPv6 deployment data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
   /del/{countryCode}-ipv6.json:
     get:
       operationId: getCountryIpv6Data
