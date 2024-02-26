@@ -1,4 +1,4 @@
-[RDAP.md](RDAP.yaml)
+[RDAP.yaml](RDAP.yaml)
 
 
 1. **IP Address Query (`/ip/{ip}`)**: Takes an IP address (e.g., `1.2.3.4`) as input. Returns details about the IP address, including its registration, network information, and associated entities.
