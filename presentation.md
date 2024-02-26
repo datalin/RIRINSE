@@ -10,9 +10,9 @@
 
 # How
 - Find all the service name and initate the [building blocks](https://github.com/datalin/RIRINSE-APNIC57/blob/main/Building%20Blocks/README.md)
-- Bring in the already existing documentation, api endpoints, and yaml files, example codes and link them in seperate columns.
+- Bring in the already existing documentation, API endpoints, and YAML files, example codes and link them in separate columns.
 - If they are not available create them and link them in the catalog.
-- Use GPT to read the api resutls and create yaml file for them.
+- Use GPT to read the api results and create YAML file for them.
 - Get more details regarding all endpoints from the RIRs internal software team.
 
 # Challanges
