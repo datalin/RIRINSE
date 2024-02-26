@@ -6,11 +6,12 @@
 # What
 - Make a catalog of all the services under APNIC as an RIR.
 - Find all the Documentation for the servides, and API endpoints and link it with service name with easy to understand descripion for Humans.
-- Also find or build all the YAML files for all the API endpoints and link to the services in the catalog.
+- Also find or build all the YAML files for all the API endpoints and link to the services in the catalog so that Programs can read it.
 
 # How
 - Find all the service name and initate the [building blocks](https://github.com/datalin/RIRINSE-APNIC57/blob/main/Building%20Blocks/README.md)
-- 
+- Bring in the already existing documentation, api endpoints, and yaml files, and link them in seperate columns.
+- If they are not available create them
 
 # Challanges
 
