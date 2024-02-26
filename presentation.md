@@ -9,7 +9,7 @@
 - Also find or build all the YAML files for all the API endpoints and link to the services in the catalog.
 
 # How
-- Find all the service name and initate the 
+- Find all the service name and initate the [building blocks] (https://github.com/datalin/RIRINSE-APNIC57/blob/main/Building%20Blocks/README.md)
 - 
 
 # Challanges
