@@ -2,7 +2,7 @@
 
 A contribution by shankar ganesh pj CTO & Co-founder at Protection Shield
 
- * [An Analysis package in Python](Analyze/README.md)
+ * [A Machine Learning (ML) Analysis package in Python](Analyze/README.md)
 
 A simple delegated file parser in Python3 is available
 
