@@ -1,5 +1,8 @@
 # Building Blocks
 
+This is a list of data sources relating to Internet Number Resources, and how they are visible, and to what extend they have been formalised in a YAML definition which can be used to drive ML introspection over the data.
+
+
 | **Data Source** | **Description** | **Relevance to Resource Tracking** | **Source Link** | **YAML** |
 |---|---|---|---|---|
 | whois | Provides information about IP address blocks and their ownership. | Identifies the current holder of a resource and contact details. | [https://wq.apnic.net/](https://wq.apnic.net/) |
