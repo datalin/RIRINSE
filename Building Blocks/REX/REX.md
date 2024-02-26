@@ -4,7 +4,7 @@ Welcome to the REX APIs documentation. This repository contains OpenAPI specific
 
 ## API Documentation
 
-- **IPv6 Deployment, IPv4 Status Data by Country**: [Measurement](measurement.yaml) - Documentation for accessing IPv6 deployment data by country.
+- **IPv6 Deployment, IPv4 Status Data by Country**: [Measurement Yaml](measurement.yaml) - Documentation for accessing IPv6 deployment data by country.
 
 - **Economies Data**: [Economies YAML](economies.yaml) - Access data on various economies, provided by REX.
 
