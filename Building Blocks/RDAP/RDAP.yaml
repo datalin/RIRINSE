@@ -292,7 +292,79 @@ paths:
           description: Bad request
         '404':
           description: Domain history not found
-
+  /entity/{entityHandle}:
+    get:
+      operationId: getEntityInformation
+      summary: Get information about a specific entity
+      parameters:
+        - name: entityHandle
+          in: path
+          required: true
+          description: The handle (unique identifier) of the entity to query information about
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Information about the entity
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  handle:
+                    type: string
+                  vcardArray:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        version:
+                          type: string
+                        fn:
+                          type: string
+                        org:
+                          type: string
+                        adr:
+                          type: array
+                          items:
+                            type: string
+                        tel:
+                          type: array
+                          items:
+                            type: string
+                        email:
+                          type: string
+                  roles:
+                    type: array
+                    items:
+                      type: string
+                  publicIds:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                        identifier:
+                          type: string
+                  remarks:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                        description:
+                          type: array
+                          items:
+                            type: string
+                required:
+                  - handle
+                  - vcardArray
+        '400':
+          description: Bad request
+        '404':
+          description: Entity not found
 
 
     
