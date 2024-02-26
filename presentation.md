@@ -1,4 +1,4 @@
-## RIRINSE - (RIR Internet Number ?)
+## RIRINSE - (RIR Internet Number Structured Entities)
 
 # Why
 ### There are two many semi documented resources and there isnt a full catalog for all the data services provided by RIRs, that makes it hard to work with for people and for programs. For example: if you want to know where you can get the current resource disposition is under a certain economy, and where those resources are geographically located, its very hard to do. 
