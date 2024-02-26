@@ -13,7 +13,7 @@ Because some IPv4 was given out as ranges which are not a single prefix, but
 were recorded as a start-end sequence historically as a single transaction, the
 format for IPv4 in a delegated file is ```IPv4 Prefix base|Host Count``` ie the range
 can be calculated as (IPv4 Prefix base) - (IPv4 Prefix base) + (Host Count) -where the second field
-is re-presented as the IPv4 address it represents. so 192.168.0.0 - (192.168.0.0 + 65535)
+is re-presented as the IPv4 address it represents. so 192.168.0.0 - (192.168.0.0 + 65535) which is the same as 192.168.255.255
 
 for AS numbers, the record format is ```Base AS|count``` which means all the AS numbers from the base AS
 in sequence. So ```12345|4``` would mean ASNs ```12345, 12346, 12347, 12348```.
