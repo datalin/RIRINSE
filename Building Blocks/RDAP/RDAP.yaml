@@ -365,7 +365,81 @@ paths:
           description: Bad request
         '404':
           description: Entity not found
-
+  /entities:
+    get:
+      operationId: searchEntitiesByFullName
+      summary: Search for entities based on full name
+      parameters:
+        - name: fn
+          in: query
+          required: true
+          description: The full name of the entity to search for
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of entities matching the full name
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    handle:
+                      type: string
+                    vcardArray:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          version:
+                            type: string
+                          fn:
+                            type: string
+                          org:
+                            type: string
+                          adr:
+                            type: array
+                            items:
+                              type: string
+                          tel:
+                            type: array
+                            items:
+                              type: string
+                          email:
+                            type: string
+                    roles:
+                      type: array
+                      items:
+                        type: string
+                    publicIds:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          type:
+                            type: string
+                          identifier:
+                            type: string
+                    remarks:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          title:
+                            type: string
+                          description:
+                            type: array
+                            items:
+                              type: string
+                required:
+                  - handle
+                  - vcardArray
+        '400':
+          description: Bad request
+        '404':
+          description: No entities found matching the criteria
 
     
 
