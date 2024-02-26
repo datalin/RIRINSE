@@ -6,7 +6,7 @@ At this time, the main example code is this contribution by shankar ganesh pj CT
 
 Additionally, a simple delegated file parser in Python3 is available
 
- * [delegated2python.py](delegated2python/README.md)
+ * [delegated2prefix.py](delegated2prefix/README.md)
 
    
 
