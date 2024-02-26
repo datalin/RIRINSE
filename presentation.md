@@ -18,12 +18,17 @@
 # Challanges
 - Found it hard to read the RFCs, used GPT to read the RFC and generate YAML but that was not working always.
 - Not all documentation has all the endpoint mentioned, so we had to collect endpoints and add.
-- 
+- We could write the code to fetch, but because of the lack of documentation already, we couldnt write code to analyze the data properly for NRO.
 
 # Outcomes
+- We made a catalog of all the APNIC data services, what those are, and how to use them.
+- We generated some YAML files, validated them by building a GPT with it.
+- We wrote codes to fetch data from some of those services.
 
 # Future Work
 
 More of the same
+- Complete the YAML and example code of all the mentioned services of APNIC
 - Find more services under APNIC as an RIR
 - Do this same documentation for all the other RIRs
+- Be more detailed in explaining what the service provide as data and and how to call the service, in terms of human readable language and YAML
