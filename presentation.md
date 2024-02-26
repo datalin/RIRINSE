@@ -26,8 +26,6 @@
 - We wrote codes to fetch data from some of those services.
 
 # Future Work
-
-More of the same
 - Complete the YAML and example code of all the mentioned services of APNIC
 - Find more services under APNIC as an RIR
 - Do this same documentation for all the other RIRs
