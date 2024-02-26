@@ -8,11 +8,11 @@ A simple delegated file parser in Python3 is available
 
  * [delegated2prefix.py](delegated2prefix/README.md)
 
-In [Building Blocks](../Building%20Blocks/README.md) two example YAML definitions and associated GPT interfaces
+In [Building Blocks/](../Building%20Blocks/README.md) two example YAML definitions and associated GPT interfaces
 
- * [Building Blocks](../Building%20Blocks/REX.md) YAML for REX
+ * [REX via GPT](../Building%20Blocks/REX.md) YAML for REX
 
- * [Building Blocks](../Building%20Blocks/RDAP.md) YAML for RDAP
+ * [RDAP via GPT](../Building%20Blocks/RDAP.md) YAML for RDAP
 
    
 
