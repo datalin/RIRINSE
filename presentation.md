@@ -1,4 +1,4 @@
-## RIRINSE - (RIR Internet Number )
+## RIRINSE - (RIR Internet Number ?)
 
 # Why
 ###
