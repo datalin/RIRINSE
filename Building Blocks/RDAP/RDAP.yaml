@@ -53,4 +53,211 @@ paths:
           description: Bad request
         '404':
           description: IP address not found
+  /history/ip/{ipAddress}:
+    get:
+      operationId: getIpHistory
+      summary: Get historical information about a specific IP address
+      parameters:
+        - name: ipAddress
+          in: path
+          required: true
+          description: The IP address to query historical information about
+          schema:
+            type: string
+            pattern: '^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$'
+      responses:
+        '200':
+          description: Historical information about the IP address
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  events:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        eventAction:
+                          type: string
+                        eventDate:
+                          type: string
+                        eventActor:
+                          type: string
+                    required:
+                      - eventAction
+                      - eventDate
+        '400':
+          description: Bad request
+        '404':
+          description: IP address history not found
+  /autnum/{asn}:
+    get:
+      operationId: getAutnumInformation
+      summary: Get information about a specific autonomous system number (ASN)
+      parameters:
+        - name: asn
+          in: path
+          required: true
+          description: The autonomous system number to query information about
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Information about the ASN
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  handle:
+                    type: string
+                  startAutnum:
+                    type: integer
+                    format: int64
+                  endAutnum:
+                    type: integer
+                    format: int64
+                  name:
+                    type: string
+                  type:
+                    type: string
+                  country:
+                    type: string
+                  status:
+                    type: array
+                    items:
+                      type: string
+                required:
+                  - handle
+                  - startAutnum
+                  - endAutnum
+                  - name
+                  - type
+                  - country
+                  - status
+        '400':
+          description: Bad request
+        '404':
+          description: ASN not found
+  /history/autnum/{asn}:
+    get:
+      operationId: getAutnumHistory
+      summary: Get historical information about a specific autonomous system number (ASN)
+      parameters:
+        - name: asn
+          in: path
+          required: true
+          description: The autonomous system number to query historical information about
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Historical information about the ASN
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  events:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        eventAction:
+                          type: string
+                        eventDate:
+                          type: string
+                        eventActor:
+                          type: string
+                    required:
+                      - eventAction
+                      - eventDate
+        '400':
+          description: Bad request
+        '404':
+          description: ASN history not found
+  /domain/{domainName}:
+    get:
+      operationId: getDomainInformation
+      summary: Get information about a specific domain
+      parameters:
+        - name: domainName
+          in: path
+          required: true
+          description: The domain name to query information about, including reverse DNS lookup domains
+          schema:
+            type: string
+            pattern: '^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+      responses:
+        '200':
+          description: Information about the domain
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  handle:
+                    type: string
+                  ldhName:
+                    type: string
+                  nameservers:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        ldhName:
+                          type: string
+                  entities:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        handle:
+                          type: string
+                        roles:
+                          type: array
+                          items:
+                            type: string
+                        publicIds:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              type:
+                                type: string
+                              identifier:
+                                type: string
+                  status:
+                    type: array
+                    items:
+                      type: string
+                  remarks:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                        description:
+                          type: array
+                          items:
+                            type: string
+                required:
+                  - handle
+                  - ldhName
+        '400':
+          description: Bad request
+        '404':
+          description: Domain not found
+
+
+    
+
+
+          
 
