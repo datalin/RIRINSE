@@ -440,6 +440,80 @@ paths:
           description: Bad request
         '404':
           description: No matching entities found
+  /domains:
+    get:
+      operationId: searchDomainsByName
+      summary: Search for domains based on name pattern
+      parameters:
+        - name: name
+          in: query
+          required: true
+          description: The domain name or pattern to search for
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of domains matching the name search criterion
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    handle:
+                      type: string
+                    ldhName:
+                      type: string
+                    nameservers:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          ldhName:
+                            type: string
+                    entities:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          handle:
+                            type: string
+                          roles:
+                            type: array
+                            items:
+                              type: string
+                          publicIds:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                type:
+                                  type: string
+                                identifier:
+                                  type: string
+                    status:
+                      type: array
+                      items:
+                        type: string
+                    remarks:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          title:
+                            type: string
+                          description:
+                            type: array
+                            items:
+                              type: string
+                  required:
+                    - handle
+                    - ldhName
+        '400':
+          description: Bad request
+        '404':
+          description: No matching domains found
 
 
 
