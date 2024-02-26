@@ -5,7 +5,7 @@
 
 # What
 - Make a catalog of all the services under APNIC as an RIR.
-- Find all the Documentation for the servides, and API endpoints and link it with service name with easy to understand descripion for Humans.
+- Find all the Documentation for the services, and API endpoints and link it with service name with easy to understand description for Humans.
 - Also find or build all the YAML files for all the API endpoints and link to the services in the catalog so that Programs can read it.
 
 # How
