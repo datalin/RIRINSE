@@ -1,0 +1,67 @@
+openapi: 3.0.0
+info:
+  title: Combined REX and IPv6 Deployment Data API
+  description: API for accessing REX data including ASN, IPv4, IPv6, economy statistics, and specific IPv6 deployment data for various economies.
+  version: 1.0.0
+servers:
+  - url: https://rex-measurements.storage.googleapis.com
+    description: Storage server for IPv6 deployment data
+paths:
+  /del/{countryCode}-ipv6.json:
+    get:
+      operationId: getCountryIpv6Data
+      summary: Get IPv6 data for a specific country
+      parameters:
+        - name: countryCode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful retrieval of IPv6 data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+  /del/{countryCode}-ipv4.json:
+    get:
+      operationId: getCountryIpv4Data
+      summary: Get IPv4 data for a specific country
+      parameters:
+        - name: countryCode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful retrieval of IPv4 data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+  /del/{countryCode}-asn.json:
+    get:
+      operationId: getCountryAsnData
+      summary: Get ASN data for a specific country
+      parameters:
+        - name: countryCode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful retrieval of ASN data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+ 
